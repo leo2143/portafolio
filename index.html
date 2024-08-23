@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="tablet.css"
+      media="screen and (max-width: 1250px)"
+    />
+    <link
+      rel="stylesheet"
+      href="movile.css"
+      media="screen and (max-width: 750px)"
+    />
+
+    <script src="main.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="192x192"
+      href="favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="512x512"
+      href="favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Portafolio Orellana Leonardo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div>
+          <img src="logos/logo.svg" alt="logo de mi marca personal" />
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="#about-me">Sobre mi</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacion">Formacion</a>
+            <a href="#proyectos">Proyectos</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro" id="intro">
+        <div class="intro-container">
+          <div class="intro-text">
+            <p>Hola</p>
+            <h1>Soy Orellana <br />Leonardo</h1>
+            <p class="texto-tittle">Desarrollador Web</p>
+            <div class="cv-button-container-tittle">
+              <button class="cv-button-tiitle" onclick="descargarPDF()">
+                Descargar CV
+              </button>
+            </div>
+          </div>
+
+          <div class="intro-img">
+            <img src="imgs/foto-propia.png" alt="foto propia" />
+          </div>
+        </div>
+      </section>
+      <section class="about-me" id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-img">
+            <div>
+              <img src="imgs/foto-mia-2.jpg" alt="foto propia" />
+            </div>
+          </div>
+          <div class="about-me-text">
+            <div><h2>Sobre Mi</h2></div>
+            <div>
+              <p>
+                Soy desarrollador web con 2 años de experiencia en backend y 1
+                año en frontend. Me especializo en el desarrollo de
+                <strong lang="en">APIs</strong> y en la creación de
+                <strong
+                  lang="
+                es"
+                  >componentes con Angular</strong
+                >, asegurando una integración perfecta con el backend. Los
+                desafíos son mi principal fuente de motivación, impulsándome a
+                investigar y aprender constantemente nuevas técnicas y mejores
+                prácticas en desarrollo web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="habilidades">
+        <div class="skills-title"><h2>Habilidades</h2></div>
+        <div class="skills-container">
+          <div class="area">
+            <h3>Backend</h3>
+            <div class="tecnologias">
+              <div><img src="logos/bxl-java.svg" alt="java" /></div>
+              <div><img src="logos/bxl-docker.svg" alt="docker" /></div>
+              <div><img src="logos/bxl-spring-boot.svg" alt="spring" /></div>
+              <div><img src="logos/bxl-git.svg" alt="git" /></div>
+            </div>
+          </div>
+
+          <div class="area">
+            <h3>Frontend</h3>
+            <div class="tecnologias">
+              <div><img src="logos/bxl-angular.svg" alt="angular" /></div>
+              <div><img src="logos/bxl-typescript.svg" alt="typeScript" /></div>
+              <div><img src="logos/bxl-html5.svg" alt="html" /></div>
+              <div>
+                <img
+                  src="logos/bxl-nodejs.svg
+              "
+                  alt="nodeJs"
+                />
+              </div>
+              <div><img src="logos/bxl-css3.svg" alt="css" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="formation" id="formacion">
+        <h2>Formacion</h2>
+
+        <div class="formation-boxes-container">
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso Definitivo de HTML y CSS</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso de Animaciones con CSS</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso de JavaScript Desde Cero</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso Profesional de Git y GitHub</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso de Java SE Orientado a Objetos</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso Básico de Testing en Java</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso de Java Spring</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Udemy</h3>
+              <p class="formation-p">
+                Angular: Creando Webapp Full Stack de cero a expert
+              </p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Udemy</h3>
+              <p class="formation-p">
+                Microservicios y APIs REST con Spring Boot, OAuth2 y Docker
+              </p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-courses-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Platzi</h3>
+              <p class="formation-p">Curso de Responsive Design</p>
+              <div class="formation-footer">
+                <img
+                  class="curse"
+                  src="imgs/diploma-icon.png"
+                  alt="icono de certificado"
+                />
+                <p class="status">Finalizado</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-univercity-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Da Vinci</h3>
+              <p class="formation-p">Tecnicatura en Diseño y Desarrollo Web</p>
+              <div class="formation-footer">
+                <img
+                  class="graduate"
+                  src="imgs/gorro-graduacion.png"
+                  alt="icono gorro de graudacion"
+                />
+                <p class="status-graduate">2024-En Curso</p>
+              </div>
+            </div>
+          </div>
+          <div class="formation-univercity-container">
+            <img
+              class="fondo"
+              src="imgs/fondo-proyectos.png"
+              alt="Fondo decorativo para los cursos"
+            />
+            <div class="formation-text">
+              <h3>Ungs</h3>
+              <p class="formation-p">Licenciatura en Sistemas</p>
+              <div class="formation-footer">
+                <img
+                  class="graduate"
+                  src="imgs/gorro-graduacion.png"
+                  alt="icono gorro de graudacion"
+                />
+                <p class="status-graduate">2022-2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Projects" id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="proyect-container">
+          <div class="proyect-Left">
+            <div class="proyect-image-container">
+              <a href="https://elden-ring-fan-web.vercel.app/index.html">
+                <img
+                  src="imgs/elden.png"
+                  alt="imagen de la pagina de elden ring"
+                />
+              </a>
+            </div>
+            <div class="proyect-text-container">
+              <h3>Elden Ring</h3>
+              <p>Landing page sobre el videojuego EldenRing</p>
+            </div>
+          </div>
+
+          <div class="proyect-right">
+            <div class="proyect-image-container">
+              <a
+                href="https://65e902ad76bd4a76448c0e35--batatabit-v1.netlify.app/"
+              >
+                <img
+                  src="imgs/batatabit.png"
+                  alt="imagen de la pagina de elden ring"
+                />
+              </a>
+            </div>
+            <div class="proyect-text-container">
+              <h3>Batatabit</h3>
+              <p>Landing page sobre una empresa ficticia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-logo">
+          <img src="logos/logo.svg" alt="logo de mi marca" />
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-text">
+          <p>Copyright 2024© Orellana Leonardo</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
