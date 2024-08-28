@@ -102,7 +102,7 @@ nav >div:first-child img {
 .cv-button-container-tittle {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   margin-top: 1.2rem;
   align-items: center;
 }
@@ -113,7 +113,6 @@ nav >div:first-child img {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  width: 430px;
 }
 
 nav div:nth-of-type(2) img {
@@ -122,8 +121,10 @@ nav div:nth-of-type(2) img {
 
 
 .cv-button-tiitle{
+  max-width: 180px;
   color: var(--backgroundColor);
   justify-content: center;
+  width: 45%;
   border: 0;
   border-radius: 0.625rem;
   text-align: center;
@@ -151,7 +152,7 @@ main {
 .intro-container {
   width: 90%;
   margin-top: -3.438rem;
-  margin-left: 17%;
+  margin-left: 10%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -162,7 +163,7 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 34%;
+  width: 45%;
 }
 .intro-text p:first-child {
   font-size: 1.125rem;
@@ -180,7 +181,6 @@ main {
 }
 .intro-img img {
   width: 100%;
-  filter: drop-shadow(14px 0px 31px #000016);
 }
 .about-me {
   position: relative;

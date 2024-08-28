@@ -115,7 +115,7 @@ nav >div:first-child img {
 .cv-button-container-tittle {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   margin-top: 1.2rem;
   align-items: center;
 }
@@ -126,11 +126,11 @@ nav >div:first-child img {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  width: 409px;
 }
 .cv-button-tiitle{
   color: var(--backgroundColor);
   justify-content: center;
+  width: 45%;
   border: 0;
   border-radius: 0.625rem;
   text-align: center;
@@ -182,14 +182,13 @@ main {
 }
 
 .intro-img {
-  width: 20%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .intro-img img {
   width: 100%;
-  filter: drop-shadow(14px 0px 31px #000016);
 }
 .about-me {
   position: relative;
