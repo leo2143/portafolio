@@ -94,16 +94,16 @@ nav {
   justify-content: center;
   gap: 70px;
   padding-top: 0.938rem;
-  width: 100%;
+  width: 95%;
   max-width: 1920px;
 }
-nav div:first-child {
+nav >div:first-child {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
 
-nav div:first-child img {
+nav >div:first-child img {
   object-fit: cover;
   width: 61px;
   height: 75px;
@@ -120,7 +120,7 @@ nav div:first-child img {
   align-items: center;
 }
 
-.dropdown-content {
+.drop-a-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,11 +182,13 @@ main {
 }
 
 .intro-img {
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .intro-img img {
+  width: 100%;
   filter: drop-shadow(14px 0px 31px #000016);
 }
 .about-me {
