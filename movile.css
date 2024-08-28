@@ -30,17 +30,7 @@ h2 {
   font-family: "PT Sans", sans-serif;
   color: var(--tittleColor);
 }
-.dropdown-content a::after{
-  content: "";
-  display: block;
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(51, 204, 204, 1) 30%, rgba(51, 204, 204, 0) 100%, rgba(51, 204, 204, 0) 0%);
-  bottom: -4px;
-  z-index: -1;
-}
+
 
 h2::after {
   content: "";
@@ -102,7 +92,7 @@ nav {
 }
 nav > div:first-child{
   display: block;
-  width: 45%;
+  width: 27%;
   order: 1;
 }
 nav > div:first-child img {
@@ -112,32 +102,47 @@ nav > div:first-child img {
 
 .dropbtn {
   display: block;
-  margin-left: 3rem;
-  background-color: #333;
+  margin-left: 1rem;
+  background-color: #0d0d47;
+  background-image: url(imgs/hamburger-menu-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   border-radius: 0.625rem;
-  max-width: 60px;
+  max-width: 50px;
   max-height: 50px;
   height: auto;
   width: 100%;
 }
+.dropdown-content a::after{
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(51, 204, 204, 1) 30%, rgba(51, 204, 204, 0) 100%, rgba(51, 204, 204, 0) 0%);
+  bottom: -4px;
+  z-index: -1;
+}
 .drop-a-container{
   display: flex;
   flex-direction: column;
+  align-items: unset;
+  justify-content: left;
   margin-top: 20%;
   gap: 3rem;
   width: 100%;
-
 }
-
-
 .dropdown {
   position: relative;
   display: inline-block;
+
   width: 100%;
 }
 .dropdown:hover {
@@ -153,21 +158,20 @@ nav > div:first-child img {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  text-align: left;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
   display: block;
   color: white;
-  padding: 0.75rem 4rem;
   text-decoration: none;
+  padding-left: 2rem;
 }
 .dropdown-content:hover a {
   display: block;
   color: white;
-  width: 90%;
-  text-align: left;
-  padding: 0.75rem 1rem;
+  padding-left: 2rem;
   text-decoration: none;
 }
 
@@ -179,7 +183,6 @@ nav > div:first-child img {
   display: block;
   background-color: #0d0d47;
   z-index: 999;
-
 }
 
 .cv-button{
