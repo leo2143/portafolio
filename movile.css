@@ -546,12 +546,14 @@ section{
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 0%;
   gap: 10px;
 }
 .proyect-right {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-left: 0%;
   gap: 10px;
@@ -601,6 +603,8 @@ section{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 500px;  
+  min-width: 320px;
 }
 .proyect-text-container {
   display: flex;

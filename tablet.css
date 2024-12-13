@@ -447,6 +447,10 @@ main {
   border-radius: 2.188rem;
   width: 100%;
   height: 100%;
+  max-width: 500px;  
+  min-width: 350px;
+
+
   object-fit: cover;
 }
 .proyect-text-container {
