@@ -231,7 +231,7 @@ nav > div:first-child img {
 
 }
 .intro {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
 }
@@ -240,7 +240,7 @@ main {
 }
 .intro-container {
   width: 90%;
-  margin-top: -3.438rem;
+  margin-top: 50px;
   margin-left: 0;
   display: flex;
   justify-content: center;
@@ -388,12 +388,13 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* justify-content: center; */
-  z-index: 2;
+  gap: 90px 60px;
+    z-index: 2;
 }
 .area {
-  width: 16%;
+  width: 100%;
   gap: 15px;
+  max-width: 180px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -546,6 +547,7 @@ section{
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 0%;
   gap: 10px;
 }
@@ -553,6 +555,7 @@ section{
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 0%;
   gap: 10px;
 }
@@ -586,14 +589,11 @@ section{
   bottom: -4px;
   z-index: -1;
 }
-.proyect-image-container img{
-  border-radius: 0;
-}
-.texto-tittle{
-  text-align: center;
-}
+
 .proyect-image-container {
   height: 285px;
+  max-width: 400px;
+  min-width: 400px;
   border-radius:0;
 
 }
@@ -637,6 +637,9 @@ section{
 .decoration-proyect img {
   transform: rotateY(180deg);
   width: 100%;
+}
+.tecnologies-used img{
+  width: 2.5rem;
 }
 .footer{
   display: flex;

@@ -282,9 +282,15 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 300px;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px 93px;
+  flex-wrap: wrap;
+  max-width: 530px;
 }
 .area {
-  width: 16%;
+  width: 30%;
   gap: 15px;
   display: flex;
   align-items: center;
@@ -413,32 +419,32 @@ main {
 }
 .proyect-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-  width: 100%;
-}
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
 .proyect-Left {
   position: relative;
-  width: 38%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  gap: 10px;
+  max-width: 1200px;
+  flex-direction: row;
+  gap: 30px;
 }
 .proyect-right {
   position: relative;
-  width: 38%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 50%;
-
+  max-width: 1200px;
   gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .proyect-image-container {
   border-radius: 2.188rem;
-  height: 558px;
+  height: 440px;
   z-index: 2;
 }
 .proyect-image-container img {
@@ -448,16 +454,17 @@ main {
   object-fit: cover;
 }
 .proyect-text-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
 }
 
 .proyect-text-container p {
-  width: 50%;
   font-weight: 500;
-  text-align: center;
+  max-width: 500px;
 }
 .proyect-text-container h3 {
   font-weight: lighter;
@@ -492,6 +499,10 @@ main {
 .decoration-proyect img {
   transform: rotateY(180deg);
   width: 100%;
+}
+
+.tecnologias img{
+  width: 2.5rem;
 }
 
 

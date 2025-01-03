@@ -1,446 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="tablet.css"
-      media="screen and (max-width: 1250px)"
-    />
-    <link
-      rel="stylesheet"
-      href="movile.css"
-      media="screen and (max-width: 750px)"
-    />
 
-    <script src="main.js"></script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="android-chrome"
-      sizes="192x192"
-      href="favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="android-chrome"
-      sizes="512x512"
-      href="favicon/android-chrome-512x512.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Portafolio Orellana Leonardo</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <div>
-          <img src="logos/logo.svg" alt="logo de mi marca personal" />
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn"></button>
-          <div class="dropdown-content">
-            <div class="drop-a-container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WPP8H3P5');</script>
+  <!-- End Google Tag Manager -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/tablet.css" media="screen and (max-width: 1250px)" />
+  <link rel="stylesheet" href="styles/movile.css" media="screen and (max-width: 750px)" />
+
+  <script src="main.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="android-chrome" sizes="192x192" href="favicon/android-chrome-192x192.png" />
+  <link rel="android-chrome" sizes="512x512" href="favicon/android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>Portafolio Orellana Leonardo</title>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPP8H3P5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav class="nav-bar">
+      <div>
+        <img src="logos/logo.svg" alt="logo de mi marca personal" />
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <div class="drop-a-container">
             <a href="#about-me">Sobre mi</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#formacion">Formacion</a>
             <a href="#proyectos">Proyectos</a>
           </div>
 
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-container">
+        <div class="intro-text">
+          <p>Hola</p>
+          <h1>Soy Orellana <br />Leonardo</h1>
+          <p class="texto-tittle">Desarrollador Web</p>
+          <div class="cv-button-container-tittle">
+            <button class="cv-button-tiitle" onclick="descargarPDF()">
+              Descargar CV
+            </button>
           </div>
         </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="intro" id="intro">
-        <div class="intro-container">
-          <div class="intro-text">
-            <p>Hola</p>
-            <h1>Soy Orellana <br />Leonardo</h1>
-            <p class="texto-tittle">Desarrollador Web</p>
-            <div class="cv-button-container-tittle">
-              <button class="cv-button-tiitle" onclick="descargarPDF()">
-                Descargar CV
-              </button>
-            </div>
-          </div>
 
-          <div class="intro-img">
-            <img src="imgs/diseño.jpg" alt="foto propia" />
+        <div class="intro-img">
+          <img src="imgs/diseño.jpg" alt="foto propia" />
+        </div>
+      </div>
+    </section>
+    <section class="about-me" id="about-me">
+      <div class="decoration">
+        <img src="imgs/decoracion-derecha.png" alt="">
+      </div>
+      <div class="about-me-container">
+        <div class="about-me-img">
+          <div>
+            <img src="imgs/foto-mia-2.jpg" alt="foto propia" />
           </div>
         </div>
-      </section>
-      <section class="about-me" id="about-me">
-        <div class="decoration">
-          <img src="imgs/decoracion-derecha.png" alt="">
+        <div class="about-me-text">
+          <div>
+            <h2>Sobre Mi</h2>
+          </div>
+          <div>
+            <p>
+              Soy desarrollador web con 2 años de experiencia en backend y 1
+              año en frontend. Me especializo en el desarrollo de
+              <strong lang="en">APIs</strong> y en la creación de
+              <strong lang="
+                es">componentes con Angular</strong>, asegurando una integración perfecta con el backend. Los
+              desafíos son mi principal fuente de motivación, impulsándome a
+              investigar y aprender constantemente nuevas técnicas y mejores
+              prácticas en desarrollo web.
+            </p>
+          </div>
         </div>
-        <div class="about-me-container">
-          <div class="about-me-img">
+      </div>
+    </section>
+
+    <section class="skills" id="habilidades">
+      <div class="skills-title">
+        <h2>Habilidades</h2>
+      </div>
+      <div class="skills-container">
+        <div class="area">
+          <h3>Backend</h3>
+          <div class="tecnologias">
+            <div><img src="logos/bxl-java.svg" alt="java" /></div>
+            <div><img src="logos/bxl-docker.svg" alt="docker" /></div>
+            <div><img src="logos/bxl-spring-boot.svg" alt="spring" /></div>
+            <div><img src="logos/bxl-git.svg" alt="git" /></div>
+          </div>
+        </div>
+
+        <div class="area">
+          <h3>Frontend</h3>
+          <div class="tecnologias">
+            <div><img src="logos/bxl-angular.svg" alt="angular" /></div>
+            <div><img src="logos/bxl-typescript.svg" alt="typeScript" /></div>
+            <div><img src="logos/bxl-html5.svg" alt="html" /></div>
             <div>
-              <img src="imgs/foto-mia-2.jpg" alt="foto propia" />
+              <img src="logos/bxl-nodejs.svg
+              " alt="nodeJs" />
             </div>
-          </div>
-          <div class="about-me-text">
-            <div><h2>Sobre Mi</h2></div>
-            <div>
-              <p>
-                Soy desarrollador web con 2 años de experiencia en backend y 1
-                año en frontend. Me especializo en el desarrollo de
-                <strong lang="en">APIs</strong> y en la creación de
-                <strong
-                  lang="
-                es"
-                  >componentes con Angular</strong
-                >, asegurando una integración perfecta con el backend. Los
-                desafíos son mi principal fuente de motivación, impulsándome a
-                investigar y aprender constantemente nuevas técnicas y mejores
-                prácticas en desarrollo web.
-              </p>
-            </div>
+            <div><img src="logos/bxl-css3.svg" alt="css" /></div>
           </div>
         </div>
-      </section>
+        <div class="area">
+          <h3>Diseño</h3>
+          <div class="tecnologias">
+            <div><img src="logos/bxl-figma.svg" alt="logo figma" /></div>
+            <div><img src="logos/icons8-illustrator.svg" alt="logo ilustrator" /></div>
+            <div><img src="logos/icons8-adobe-photoshop.svg" alt="logo photoshop" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="decoration-right">
+        <img src="imgs/decoracion-derecha.png" alt="">
+      </div>
+    </section>
+    <section class="formation" id="formacion">
+      <h2>Formacion</h2>
 
-      <section class="skills" id="habilidades">
-        <div class="skills-title"><h2>Habilidades</h2></div>
-        <div class="skills-container">
-          <div class="area">
-            <h3>Backend</h3>
-            <div class="tecnologias">
-              <div><img src="logos/bxl-java.svg" alt="java" /></div>
-              <div><img src="logos/bxl-docker.svg" alt="docker" /></div>
-              <div><img src="logos/bxl-spring-boot.svg" alt="spring" /></div>
-              <div><img src="logos/bxl-git.svg" alt="git" /></div>
+      <div class="formation-boxes-container">
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso Definitivo de HTML y CSS</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
             </div>
           </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso de Animaciones con CSS</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso de JavaScript Desde Cero</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso Profesional de Git y GitHub</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso de Java SE Orientado a Objetos</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso Básico de Testing en Java</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso de Java Spring</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Udemy</h3>
+            <p class="formation-p">
+              Angular: Creando Webapp Full Stack de cero a expert
+            </p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Udemy</h3>
+            <p class="formation-p">
+              Microservicios y APIs REST con Spring Boot, OAuth2 y Docker
+            </p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-courses-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Platzi</h3>
+            <p class="formation-p">Curso de Responsive Design</p>
+            <div class="formation-footer">
+              <img class="curse" src="imgs/diploma-icon.png" alt="icono de certificado" />
+              <p class="status">Finalizado</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-univercity-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Da Vinci</h3>
+            <p class="formation-p">Tecnicatura en Diseño y Desarrollo Web</p>
+            <div class="formation-footer">
+              <img class="graduate" src="imgs/gorro-graduacion.png" alt="icono gorro de graudacion" />
+              <p class="status-graduate">2024-En Curso</p>
+            </div>
+          </div>
+        </div>
+        <div class="formation-univercity-container">
+          <img class="fondo" src="imgs/fondo-proyectos.png" alt="Fondo decorativo para los cursos" />
+          <div class="formation-text">
+            <h3>Ungs</h3>
+            <p class="formation-p">Licenciatura en Sistemas</p>
+            <div class="formation-footer">
+              <img class="graduate" src="imgs/gorro-graduacion.png" alt="icono gorro de graudacion" />
+              <p class="status-graduate">2022-2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Projects" id="proyectos">
+      <h2>Proyectos</h2>
 
-          <div class="area">
-            <h3>Frontend</h3>
-            <div class="tecnologias">
-              <div><img src="logos/bxl-angular.svg" alt="angular" /></div>
-              <div><img src="logos/bxl-typescript.svg" alt="typeScript" /></div>
-              <div><img src="logos/bxl-html5.svg" alt="html" /></div>
-              <div>
-                <img
-                  src="logos/bxl-nodejs.svg
-              "
-                  alt="nodeJs"
-                />
-              </div>
-              <div><img src="logos/bxl-css3.svg" alt="css" /></div>
+      <div class="proyect-container">
+        <div class="proyect-Left">
+          <div class="proyect-image-container">
+            <a href="https://elden-ring-fan-web.vercel.app/index.html" target="_blank">
+              <img src="imgs/elden2.png" alt="imagen de la pagina de elden ring" />
+            </a>
+          </div>
+          <div class="proyect-text-container">
+            <h3>Elden Ring</h3>
+            <p>Landing page sobre el videojuego EldenRing</p>
+            <div class="tecnologies-used">
+              <img src="logos/bxl-html5.svg" alt="html logo">
+              <img src="logos/bxl-css3.svg" alt="css logo">
             </div>
+            <a href="https://github.com/leo2143/Elden-Ring-Fan-web" target="_blank">Ver repotisorio Git</a>
           </div>
         </div>
-        <div class="decoration-right">
-          <img src="imgs/decoracion-derecha.png" alt="">
-        </div>
-      </section>
-      <section class="formation" id="formacion">
-        <h2>Formacion</h2>
 
-        <div class="formation-boxes-container">
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso Definitivo de HTML y CSS</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
+        <div class="proyect-right">
+          <div class="proyect-image-container">
+            <a href="https://65e902ad76bd4a76448c0e35--batatabit-v1.netlify.app/" target="_blank">
+              <img src="imgs/batatabit.png" alt="imagen de la pagina de elden ring" />
+            </a>
           </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso de Animaciones con CSS</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
+          <div class="proyect-text-container">
+            <h3>Batatabit</h3>
+            <p>Landing page sobre una empresa ficticia</p>
+            <div class="tecnologies-used">
+              <img src="logos/bxl-html5.svg" alt="html logo">
+              <img src="logos/bxl-css3.svg" alt="css logo">
+              <img src="logos/bxl-javascript.svg" alt="css logo">
             </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso de JavaScript Desde Cero</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso Profesional de Git y GitHub</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso de Java SE Orientado a Objetos</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso Básico de Testing en Java</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso de Java Spring</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Udemy</h3>
-              <p class="formation-p">
-                Angular: Creando Webapp Full Stack de cero a expert
-              </p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Udemy</h3>
-              <p class="formation-p">
-                Microservicios y APIs REST con Spring Boot, OAuth2 y Docker
-              </p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-courses-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Platzi</h3>
-              <p class="formation-p">Curso de Responsive Design</p>
-              <div class="formation-footer">
-                <img
-                  class="curse"
-                  src="imgs/diploma-icon.png"
-                  alt="icono de certificado"
-                />
-                <p class="status">Finalizado</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-univercity-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Da Vinci</h3>
-              <p class="formation-p">Tecnicatura en Diseño y Desarrollo Web</p>
-              <div class="formation-footer">
-                <img
-                  class="graduate"
-                  src="imgs/gorro-graduacion.png"
-                  alt="icono gorro de graudacion"
-                />
-                <p class="status-graduate">2024-En Curso</p>
-              </div>
-            </div>
-          </div>
-          <div class="formation-univercity-container">
-            <img
-              class="fondo"
-              src="imgs/fondo-proyectos.png"
-              alt="Fondo decorativo para los cursos"
-            />
-            <div class="formation-text">
-              <h3>Ungs</h3>
-              <p class="formation-p">Licenciatura en Sistemas</p>
-              <div class="formation-footer">
-                <img
-                  class="graduate"
-                  src="imgs/gorro-graduacion.png"
-                  alt="icono gorro de graudacion"
-                />
-                <p class="status-graduate">2022-2023</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="Projects" id="proyectos">
-        <h2>Proyectos</h2>
+            <a href="https://github.com/leo2143/batatabit" target="_blank">Ver repotisorio Git</a>
 
-        <div class="proyect-container">
-          <div class="proyect-Left">
-            <div class="proyect-image-container">
-              <a href="https://elden-ring-fan-web.vercel.app/index.html">
-                <img
-                  src="imgs/elden.png"
-                  alt="imagen de la pagina de elden ring"
-                />
-              </a>
-            </div>
-            <div class="proyect-text-container">
-              <h3>Elden Ring</h3>
-              <p>Landing page sobre el videojuego EldenRing</p>
-            </div>
           </div>
+        </div>
 
-          <div class="proyect-right">
-            <div class="proyect-image-container">
-              <a
-                href="https://65e902ad76bd4a76448c0e35--batatabit-v1.netlify.app/"
-              >
-                <img
-                  src="imgs/batatabit.png"
-                  alt="imagen de la pagina de elden ring"
-                />
-              </a>
+        <div class="proyect-Left">
+          <div class="proyect-image-container">
+            <a href="https://poke-nfts-seven.vercel.app/" target="_blank">
+              <img src="imgs/pokenfts.png" alt="imagen de pokenfts" />
+            </a>
+          </div>
+          <div class="proyect-text-container">
+            <h3>PokeNfts</h3>
+            <p>One page de una tienda ficticia</p>
+            <div class="tecnologies-used">
+              <img src="logos/bxl-html5.svg" alt="html logo">
+              <img src="logos/bxl-css3.svg" alt="css logo">
+              <img src="logos/bxl-javascript.svg" alt="javascript logo">
+              <img src="logos/icons8-bootstrap-logo.svg" alt="bootstrap logo">
+
             </div>
-            <div class="proyect-text-container">
-              <h3>Batatabit</h3>
-              <p>Landing page sobre una empresa ficticia</p>
-            </div>
+            <a href="https://github.com/leo2143/pokeNfts" target="_blank">Ver repotisorio Git</a>
           </div>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-logo">
-          <img src="logos/logo.svg" alt="logo de mi marca" />
+      </div>
+      <div class="proyect-right">
+        <div class="proyect-image-container">
+          <a href="https://nintendo-switch-landing-page-leonardo-s-projects-7266c83f.vercel.app/" target="_blank">
+            <img src="imgs/switch-page.png" alt="imagen de la pagina nintendo switch" />
+          </a>
         </div>
-        <div class="footer-line"></div>
-        <div class="footer-text">
-          <p>Copyright 2024© Orellana Leonardo</p>
+        <div class="proyect-text-container">
+          <h3>Nintendo Switch</h3>
+          <p>One page sobre la consola nintendo switch</p>
+          <div class="tecnologies-used">
+            <img src="logos/bxl-html5.svg" alt="html logo">
+            <img src="logos/bxl-css3.svg" alt="css logo">
+            <img src="logos/bxl-javascript.svg" alt="javascript logo">
+            <img src="logos/icons8-bootstrap-logo.svg" alt="bootstrap logo">
+
+          </div>
+          <a href="https://github.com/leo2143/Nintendo-Switch-one-page" target="_blank">Ver repotisorio Git</a>
         </div>
-      </footer>
-    </main>
-  </body>
+      </div>
+
+      <div class="proyect-Left">
+        <div class="proyect-image-container">
+          <a
+            href="https://www.figma.com/proto/Vhv3to94uwiVxq6yXIZ9R3/Cinesfera?node-id=1-11109&t=edtZMkTs3LZHtxkX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A12923&show-proto-sidebar=1" target="_blank">
+            <img src="imgs/cinesfera.png" alt="imagen de pokenfts" />
+          </a>
+        </div>
+        <div class="proyect-text-container">
+          <h3>Cinesfera</h3>
+          <p>App de compra y alquiler de peliculas</p>
+          <div class="tecnologies-used">
+            <img src="logos/icons8-adobe-photoshop.svg" alt="html logo">
+            <img src="logos/icons8-illustrator.svg" alt="css logo">
+            <img src="logos/bxl-figma.svg" alt="figma logo">
+
+
+          </div>
+          <a href="https://www.figma.com/design/Vhv3to94uwiVxq6yXIZ9R3/Cinesfera?node-id=0-1&p=f&t=edtZMkTs3LZHtxkX-0" target="_blank">Ver
+            figma design sheet</a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="logos/logo.svg" alt="logo de mi marca" />
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-text">
+        <p>Copyright 2024© Orellana Leonardo</p>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
