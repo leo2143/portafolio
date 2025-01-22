@@ -53,6 +53,7 @@ p {
   font-weight: 300;
   font-size: 1.125rem;
   color: var(--fontColor);
+  text-align: center;
 }
 a {
   font-family: "Nunito Sans", sans-serif;
@@ -104,7 +105,7 @@ nav > div:first-child img {
   display: block;
   margin-left: 1rem;
   background-color: #0d0d47;
-  background-image: url(imgs/hamburger-menu-svgrepo-com.svg);
+  background-image: url(../imgs/hamburger-menu-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -593,7 +594,7 @@ section{
 .proyect-image-container {
   height: 285px;
   max-width: 400px;
-  min-width: 400px;
+  min-width: 320px;
   border-radius:0;
 
 }
